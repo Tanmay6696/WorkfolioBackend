@@ -1,6 +1,6 @@
 FROM node:19
 WORKDIR /app
-COPY Backend/package*.json ./ 
+COPY WorkfolioBackend/Backend/package*.json ./ 
 RUN npm install 
 COPY . .
 EXPOSE 3000
