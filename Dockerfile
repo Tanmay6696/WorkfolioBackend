@@ -1,7 +1,7 @@
 FROM node:19
-WORKDIR /app
-COPY Backend/package*.json ./ 
+WORKDIR /app/WorkfolioBackend/Backend
+COPY package*.json ./
 RUN npm install 
 COPY . .
-EXPOSE 3001
-CMD [ "node", "Backend/src/App.js" ]
+EXPOSE 3000
+CMD [ "node", "src/App.js" ]
